@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import s from "./btn.module.css";
 
 export type BtnPropsType= {
@@ -9,7 +9,9 @@ export type BtnPropsType= {
 }
 
 function Btn( props:BtnPropsType) {
-
+    // useEffect( ()=>{
+    //     localStorage.setItem('counter', JSON.stringify(props.counter))
+    //   }, [props.counter])
     return(
         <div className={s.btnItem}>
             <h3>значение</h3>
